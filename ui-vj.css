@@ -1,0 +1,146 @@
+:root {
+  --main-color: #181F2B;
+  --secondary-color: #545B63;
+  --third-color: #8d9297;
+  --light-color: #C6c9cb;
+  --text-color-dark: #333333;
+  --text-color-light: #ffffff;
+
+  /*Transparent colors*/
+  --main-color-transparent: rgba(24, 31, 43, 0.6);
+  --secondary-color-transparent: rgba(84, 91, 99, 0.6);
+  --third-color-transparent: rgba(141, 146, 151, 0.6);
+  --light-color-transparent: rgba(198, 201, 203, 0.6);
+}
+
+a {text-decoration: none;} a:hover {text-decoration: none;}
+
+.vj-slow-animation {
+  animation-duration: 1.5s !important;
+  transition-duration: 2s !important;
+}
+
+.vj-centered {
+  text-align: center;
+}
+
+.vj-text {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-color-light);
+}
+
+.vj-section-second{
+  padding: 60px 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  /* background-color: var(--secondary-color-transparent); */
+  border-radius: 10px;
+}
+.vj-section-third{
+  padding: 60px 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  /* background-color: var(--third-color-transparent); */
+  border-radius: 10px;
+}
+
+.vj-section-light{
+  padding: 60px 20px;
+  margin: 20px auto;
+  max-width: 1000px;
+  /* background-color: var(--light-color-transparent); */
+  border-radius: 10px;
+}
+
+.vj-profile-img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.vj-centered-object{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vj-light {
+  color: var(--text-color-light);
+}
+
+.vj-ulist{
+  list-style-type: none;
+  padding-left: 20px;
+  color: var(--text-color-light);
+}
+
+.vj-underline{
+  text-decoration: underline;
+  color: var(--text-color-light);
+}
+
+.vj-form{
+  max-width: 450px;
+  margin: 15px auto;
+  color: var(--text-color-light);
+}
+
+.vj-form input, .vj-form textarea{
+  background-color: var(--light-color);
+  border: none;
+  color: var(--text-color-dark);
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.vj-form input::placeholder, .vj-form textarea::placeholder{
+  color: var(--text-color-dark);
+}
+
+.vj-form input:focus, .vj-form textarea:focus{
+  outline: none;
+  box-shadow: 0 0 5px var(--main-color);
+  transform: scale(1.025);
+  transition-duration: 0.3s;
+  color: var(--text-color-dark);
+}
+
+.vj-form input::content, .vj-form textarea::content{
+  color: var(--text-color-dark);
+}
+
+.vj-form button{
+  background-color: var(--main-color);
+  border: none;
+  color: var(--text-color-light);
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.vj-bg-blury {
+  background: rgba(255, 255, 255, 0.1); /* halbtransparent, damit der Hintergrund sichtbar bleibt */
+  backdrop-filter: blur(5px);          /* Stärke des Blur-Effekts */
+  -webkit-backdrop-filter: blur(10px); /* für Safari */
+
+}
+
+.vj-button {
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
